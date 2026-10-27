@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0f16" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="manifest.json" />
+  <title>减脂打卡</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">96KG CUT · LOCAL</p>
+        <h1 id="page-title">今日打卡</h1>
+      </div>
+      <button class="icon-button" id="quick-today" aria-label="回到今天">⌁</button>
+    </header>
+
+    <main id="app" class="main-content">
+      <section class="view active" id="view-today" aria-labelledby="page-title">
+        <div id="today-content"></div>
+      </section>
+      <section class="view" id="view-calendar" aria-labelledby="page-title">
+        <div id="calendar-content"></div>
+      </section>
+      <section class="view" id="view-stats" aria-labelledby="page-title">
+        <div id="stats-content"></div>
+      </section>
+      <section class="view" id="view-settings" aria-labelledby="page-title">
+        <div id="settings-content"></div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="reminder-banner" class="reminder-banner hidden"></div>
+
+    <nav class="bottom-nav" aria-label="主导航">
+      <button class="nav-item active" data-view="today"><span>◉</span><small>今日</small></button>
+      <button class="nav-item" data-view="calendar"><span>▦</span><small>日历</small></button>
+      <button class="nav-item" data-view="stats"><span>◒</span><small>统计</small></button>
+      <button class="nav-item" data-view="settings"><span>⚙</span><small>设置</small></button>
+    </nav>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

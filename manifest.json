@@ -1,0 +1,10 @@
+{
+  "name": "减脂打卡",
+  "short_name": "减脂打卡",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080b11",
+  "theme_color": "#0b0f16",
+  "icons": []
+}
